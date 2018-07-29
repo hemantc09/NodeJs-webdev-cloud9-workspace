@@ -1,0 +1,25 @@
+
+<!--this statement adds the header from the partials/header.ejs file-->
+<% include partials/header %>
+<h1> This is the posts.ejs file</h1>
+<h4>with for loop render the value</h4>
+<% for(var i = 0; i< postsObj.length ; i++){ %>
+    <li> <%=postsObj[i].title %> - <strong><%=  postsObj[i].author %></strong> </li>
+<% } %>
+
+
+<h4>with forEach loop render the value</h4>
+<% postsObj.forEach(function(postsObj){ %>
+       <li>
+       <%= postsObj.title %> - <strong> <%=  postsObj.author %></strong> 
+       </li>  
+<% }) %>
+
+<hr>
+< % =  % >  : this tag because  html render the page assign the value and it goes inside the html thats why we use = sign
+<hr>
+
+< % % >  :js logic goes here thats why there is no = sign 
+
+<!--this statement adds the header from the partials/header.ejs file-->-->
+<% include partials/footer %>

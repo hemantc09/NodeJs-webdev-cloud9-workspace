@@ -1,0 +1,17 @@
+<!--access the javascript inside the HTMl-->
+<% include partials/header %>
+<h3> You fall with: <%= thingVar.toUpperCase()  %>  </h1>
+<% if(thingVar.toLowerCase() === "hemant"){ %> <!-- this is javascipt-->
+    <p> Good choice!!!.. Hemant is the best </p> <!--this is HTML -->
+    
+<% } else { %>  <!-- this is javascipt-->
+
+    <p>Bad Choide!! you should have said Hemant </p>
+<% } %> 
+
+<%=  %> <!-- the html render the page assign the value and it goes inside the html thats why we use = sign -->
+<% %> <!-- js logic goes here thats why there is no = sign -->
+
+
+<h4> This is the love.ejs file</h4>
+<% include partials/footer%>
